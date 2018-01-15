@@ -76,9 +76,10 @@
 3. SSH into the master node and [set up kubectl](https://github.com/kubernetes-incubator/kubespray/tree/master/contrib/terraform/openstack#set-up-local-kubectl). Do not try adding routes (We will use ssh later).
 
 Running `kubectl version` should now produce input similar to this:
+```bash
+$ kubecl version 
 
->$ kubecl version 
->
-> Client Version: version.Info{Major:"1", Minor:"8", GitVersion:"v1.8.4", GitCommit:"9befc2b8928a9426501d3bf62f72849d5cbcd5a3", GitTreeState:"clean", BuildDate:"2017-11-20T05:28:34Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"darwin/amd64"}
-> 
-> Server Version: version.Info{Major:"1", Minor:"8+", GitVersion:"v1.8.4+coreos.0", GitCommit:"4292f9682595afddbb4f8b1483673449c74f9619", GitTreeState:"clean", BuildDate:"2017-11-21T17:22:25Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
+ Client Version: version.Info{Major:"1", Minor:"8", GitVersion:"v1.8.4", GitCommit:"9befc2b8928a9426501d3bf62f72849d5cbcd5a3", GitTreeState:"clean", BuildDate:"2017-11-20T05:28:34Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"darwin/amd64"}
+ 
+ Server Version: version.Info{Major:"1", Minor:"8+", GitVersion:"v1.8.4+coreos.0", GitCommit:"4292f9682595afddbb4f8b1483673449c74f9619", GitTreeState:"clean", BuildDate:"2017-11-21T17:22:25Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
+ ```
