@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: microbot
+  name: microbot
+  namespace: default
+  annotations:
+    service.beta.kubernetes.io/openstack-internal-load-balancer: "false"
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: microbot
+  sessionAffinity: None
+  type: LoadBalancer
