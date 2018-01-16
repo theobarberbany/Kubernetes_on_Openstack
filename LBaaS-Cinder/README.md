@@ -142,3 +142,6 @@ Now pointing your browser towards http://172.27.91.235/ should return a result l
 Refreshing the page should return a different hostname. 
 
 You can now set up an ingress controller such as nginx or traefik. 
+
+*Note*: Load Balancers are not deleted automatically when the service is removed, they must be removed manually. 
+        [this script](delete_lb.sh) partially automates that process.
