@@ -47,7 +47,7 @@
     
     A shortcut for the port forwarding will be to run the following : 
     ```bash
-    $ neutron port-list -c id -c device_id  | grep -E $(nova list   | grep dj3- | awk '{print $2}' | xargs echo | tr ' ' '|') | awk '{print $2}' | xargs -n 1 -I XXX echo neutron port-update XXX --allowed_address_pairs list=true type=dict ip_address=10.233.0.0/18 ip_address=10.233.64.0/18 | bash -eEx)
+    $ neutron port-list -c id -c device_id  | grep -E $(nova list   | grep dj3- | awk '{print $2}' | xargs echo | tr ' ' '|') | awk '{print $2}' | xargs -n 1 -I XXX echo neutron port-update XXX --allowed_address_pairs list=true type=dict ip_address=10.233.0.0/18 ip_address=10.233.64.0/18 | bash -eEx
     ```
     and replace `grep dj3` with value of `cluster_name` specified in the tfvars file.
 
