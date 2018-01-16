@@ -1,6 +1,8 @@
 ## Useful Kubernetes on Openstack Things
 
-This repository aims to group various k8s resources and guides that I've found work on Openstack, with a few pointers along the way for things that I perhaps didn't find all that clear. Currently under development.
+This repository aims to group various k8s resources and guides that I've found work on the Openstack deployment at the Sanger Institute. Included are a few pointers for things that I didn't find all that clear. 
+
+This repository is currently under development.
 
  * [Deployment Using Kubespray](kubespray/)
  * [Setting Up LBaaS and Cinder](LBaaS-Cinder/)

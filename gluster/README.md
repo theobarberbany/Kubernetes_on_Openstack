@@ -47,7 +47,7 @@ Contain the information that has been added to your kubernetes cluster in order 
 
 ##### Mounting Glusterfs for use with Nextflow
 
-You may also notice that the ansible script makes the directory `/mnt/gluster`. However, by default gluster is in fact not mounted here. (Ansible unmounts it after writing a test file)
+You may also notice that the ansible script makes the directory `/mnt/gluster`. However, by default gluster not mounted. (Ansible unmounts it after writing a test file)
 
 When running ansible with `-vvvv` the fstab mount points are returned, but here they are so you don't have to: 
 
@@ -105,6 +105,5 @@ Repeat the above steps on all nodes in your cluster if you wish to use nextflow,
 
 For a more robust method of mounting, see here: https://www.jamescoyle.net/how-to/439-mount-a-glusterfs-volume
 
-Currently (December 2017) Nextflow does not support using the PV system that is provided by kubernetes 
-
+Currently (December 2017) Nextflow does not support using the PV system that is provided by kubernetes. 
 Issues [#446](https://github.com/nextflow-io/nextflow/issues/446) and [#468](https://github.com/nextflow-io/nextflow/issues/468) address this. 
