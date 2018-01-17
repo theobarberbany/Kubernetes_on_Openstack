@@ -16,7 +16,7 @@
 
 ### Getting started
 
-* Make sure you have a deployment area with **Python 2.7** with Ansible and Terraform installed.
+* Make sure you have a deployment area with **Python 2.7** with Ansible, Terraform and python netaddr (`pip install netaddr`) installed.
 
 * Having access to the Openstack CLI is also useful.
 
