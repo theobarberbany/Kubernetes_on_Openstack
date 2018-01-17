@@ -63,6 +63,7 @@
       3. Uncomment `docker_dns_servers_strict: false`
    * Don't try to use Kubeadm, it currently does not support openstack.
    * Don't try to use kpm, it's endpoints no longer exist.
+   * It is a good idea to uncomment `docker_dns_servers_strict: false` in `inventory/group_vars/all.yml` if using the provided dns setup.
 
 
 >I would recommend against having it install things like elk, istio and graffana / prometheus for you as there is little documentation on how they are configured, it will probably take less time to install it yourself manually / with Helm later
