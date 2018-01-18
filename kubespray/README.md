@@ -87,3 +87,12 @@ $ kubecl version
  ```
  
  See the official advice for large deployments [here](https://github.com/kubernetes-incubator/kubespray/blob/master/docs/large-deployments.md). Deploying a BGP Route reflector may be of use as well, see [here](https://github.com/kubernetes-incubator/kubespray/blob/master/docs/calico.md), and [here](https://networklessons.com/bgp/bgp-route-reflector/)
+ 
+ 
+Things can, do and will go wrong. If Ansible fails more than twice, it can help to rebuild the instances, this means you do not have to re terraform, and can keep the networks, ports and network ID's the same. 
+
+A shortcut for doing this is by executing the following : 
+
+```bash
+openstack server list --format json | jq '.[]' | jq -r '.ID' | xargs -r -n 1 -I XXX openstack server rebuild XXX --image 4a2caa60-ef77-4ed3-84fb-b54cbd51ae09
+```
