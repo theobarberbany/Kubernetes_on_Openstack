@@ -86,6 +86,8 @@ $ kubecl version
  Server Version: version.Info{Major:"1", Minor:"8+", GitVersion:"v1.8.4+coreos.0", GitCommit:"4292f9682595afddbb4f8b1483673449c74f9619", GitTreeState:"clean", BuildDate:"2017-11-21T17:22:25Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
  ```
  
+ *Caveats*
+ 
  See the official advice for large deployments [here](https://github.com/kubernetes-incubator/kubespray/blob/master/docs/large-deployments.md). Deploying a BGP Route reflector may be of use as well, see [here](https://github.com/kubernetes-incubator/kubespray/blob/master/docs/calico.md), and [here](https://networklessons.com/bgp/bgp-route-reflector/)
  
  
