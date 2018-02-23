@@ -96,5 +96,5 @@ Things can, do and will go wrong. If Ansible fails more than twice, it can help 
 A shortcut for doing this is by executing the following : 
 
 ```bash
-openstack server list --format json | jq -r '.[] | select(.Name | startswith("tb15"))'.ID | xargs -n 1 -I XXX openstack server rebuild XXX
+openstack server list --format json | jq -r '.[] | select(.Name | startswith("tb15-"))'.ID | xargs -n 1 -I XXX openstack server rebuild XXX
 ```
